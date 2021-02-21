@@ -1,0 +1,21 @@
+[
+	{
+		"bid_price": 123.256,
+		"is_notified": false
+	},
+
+	{
+		"bid_price": 442.256,
+		"is_notified": false
+	},
+
+	{
+		"bid_price": 1292.256,
+		"is_notified": false
+	},
+
+	{
+		"bid_price": 1221.256,
+		"is_notified": false
+	}
+]

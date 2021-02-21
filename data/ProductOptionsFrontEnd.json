@@ -1,0 +1,30 @@
+{
+  "data": {
+    "delivery_time": [
+      [1, "T+1"],
+      [2, "T+2"]
+    ],
+    "payment_type": [
+      [1, "Bank"],
+      [2, "Cash"]
+    ],
+    "product_options": {
+      "Gold": {
+        "Coin": ["999", "990"],
+        "Bar": ["991", "992"]
+      },
+      "Silver": {
+        "Bar": ["993", "995"],
+        "Biscit": ["997", "998"]
+      }
+    },
+    "product_options_id": {
+      "metal": [
+        [1, "Gold"],
+        [2, "Silver"]
+      ],
+      "metal_category": [],
+      "metal_purity": []
+    }
+  }
+}

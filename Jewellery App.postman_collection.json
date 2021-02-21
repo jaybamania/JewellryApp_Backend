@@ -1,0 +1,2947 @@
+{
+	"info": {
+		"_postman_id": "9b2f9431-4c67-40f5-9b6c-9b520905abc4",
+		"name": "Jewellery App",
+		"description": "Product end-point has  all the details of product based operation on product.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Product Options",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/options/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"options",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List a Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/list/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "buy",
+									"description": "enter product trade type ",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "gold ",
+									"description": "enter product type",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List a Product with parameter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/list/?purity=2&pay=2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "trade",
+									"value": "buy",
+									"description": "enter product trade type ",
+									"disabled": true
+								},
+								{
+									"key": "metal",
+									"value": "1",
+									"description": "enter metal",
+									"disabled": true
+								},
+								{
+									"key": "m_type",
+									"value": "2",
+									"description": "metal _category",
+									"disabled": true
+								},
+								{
+									"key": "purity",
+									"value": "2",
+									"description": "metal_purity"
+								},
+								{
+									"key": "time",
+									"value": "2",
+									"description": "time _period ",
+									"disabled": true
+								},
+								{
+									"key": "pay",
+									"value": "2",
+									"description": "payment_type"
+								}
+							]
+						},
+						"description": "Add all the primary key in the paramters"
+					},
+					"response": []
+				},
+				{
+					"name": "List Product By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/list/15/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"list",
+								"15",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/product/mylisting/?status=active",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mylisting",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "active"
+								}
+							]
+						},
+						"description": "By Default  it is histroy itself .\r\n- So pass only the parameters"
+					},
+					"response": []
+				},
+				{
+					"name": "User Product Preview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/mylisting/25/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mylisting",
+								"25",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Product Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/mylisting/2/?status=pause",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mylisting",
+								"2",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "pause"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/storedetails/?store=5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"storedetails",
+								""
+							],
+							"query": [
+								{
+									"key": "store",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favourites Add Remove",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/favouritesoper/?c_branch=1&status=add",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"favouritesoper",
+								""
+							],
+							"query": [
+								{
+									"key": "c_branch",
+									"value": "1"
+								},
+								{
+									"key": "status",
+									"value": "add"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User's MyFavourites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/myfavourites/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"myfavourites",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyFavourites User List ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4NjgzOTU4LCJqdGkiOiJkODhmMTlmOWQ2ZDY0OTE5YjMyODJlMTdiYjViODJjZCIsInVzZXJfaWQiOjJ9.6TicecwO3h48IcPX2euB5cL9UMwLaPv1d8tcGe_xUY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/myfavourites/list/?c_branch=2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"myfavourites",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "c_branch",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login ",
+			"item": [
+				{
+					"name": "SuperUser Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "35ff7b6c-d7e8-4d53-bd1c-7541ff4f5531",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"pm.environment.set(\"Superuser_ACCESS_TOKEN\",jsonData['access']);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": 1234,\r\n    \"password\": \"y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/login/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						},
+						"description": "Login for admin and superadmin."
+					},
+					"response": []
+				},
+				{
+					"name": "AdminUser Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "45b207fd-cc87-4f53-b543-ac2207fc18aa",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"pm.environment.set(\"Admin_ACCESS_TOKEN\",jsonData['access']);\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": 1111,\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/login/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						},
+						"description": "Login for admin and superadmin."
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8d76267b-0a44-4f63-b395-43387943473b",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"pm.environment.set(\"User_ACCESS_TOKEN\",jsonData['access']);\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": 8197988998,\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/login/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						},
+						"description": "Login for admin and superadmin."
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SuperAdmin-12213\",\r\n    \"country_code\": \"+91\",\r\n    \"mobile_no\":1,\r\n    \"password\": \"admin\",\r\n    \"firm_name\": \"Admi\",\r\n    \"city\": \"BLR\",\r\n    \"state\": \"UP\",\r\n    \"country\": \"India\",\r\n    \"is_seller\": false \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/register/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"register",
+								""
+							]
+						},
+						"description": "Registeration is only for the user not for super admin and admin.\r\n- is_seller : it is true when the user wants to be bullion user.\r\n- If is_seller is false dont send me the firm name.\r\n- If is seller is true send me the firm name."
+					},
+					"response": []
+				},
+				{
+					"name": "Login using Mobile No. and Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": 8197988998,\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/login/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Login OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": \"8197988998\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/sendloginotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"sendloginotp",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Mobile No. and OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": \"8197988998\",\r\n    \"otp\": \"526934\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/loginwithotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"loginwithotp",
+								""
+							]
+						},
+						"description": "Login with mobile number and otp after sending the otp \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Logged In User Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk5OTAzMDMzLCJqdGkiOiI4ODNkOGNhNzY5ZTU0YjY4YWI4ZWQxYWY1MjFkOGE0NCIsInVzZXJfaWQiOjF9.FByhfgiBABD92bku4uRv5wXQUAMPhTx1GfmD09OcLYw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/detail/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"detail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Verification OTP",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3OTkwODU0LCJqdGkiOiIyNGI3MTU0YWM4NDc0YjAxOWJiMWU0NzM3NWNkNDdmMyIsInVzZXJfaWQiOjR9.g-cfvP4xN0MfuJ5OWa2l9pMeledLzG93sS-kPNSJu9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/sendotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"sendotp",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3OTkwODU0LCJqdGkiOiIyNGI3MTU0YWM4NDc0YjAxOWJiMWU0NzM3NWNkNDdmMyIsInVzZXJfaWQiOjR9.g-cfvP4xN0MfuJ5OWa2l9pMeledLzG93sS-kPNSJu9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\": 989037\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/verifyotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"verifyotp",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token - Get the new Access token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU5NTUwMDU0NSwianRpIjoiZGVjZTk2MmMyNGJmNDM5NWJmMWMzYmI0MTMzY2VmNzYiLCJ1c2VyX2lkIjoyfQ.7cNhV_sy6tGr7d_4HVjsPqoFwYsDSwyXpzMCXYctSfU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/token/refresh/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Forgot Password OTP ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": \"8197988998\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/forgotpass/sendotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"forgotpass",
+								"sendotp",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password using Mobile No. and OTP ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\": \"8197988998\",\r\n    \"otp\": \"474547\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/forgotpass/verifyotp/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"forgotpass",
+								"verifyotp",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_no\" : \"1234\",\r\n    \"password\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/resetpass/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"resetpass",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Describe all the login details of Super-admin , Admin , User.\r\n    - Has login with otp and forget password.\r\n    ",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "76dbb7ee-fb79-4502-8c89-629dd35b6f9d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a3e72329-76c7-4954-a426-f20d65c170a3",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User Profile ",
+			"item": [
+				{
+					"name": "User Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/profile/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Personal Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/personaldetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"personaldetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Personal Details ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kalpaj\",\r\n    \"mobile_no\": \"8197988998\",\r\n    \"address_line_1\": null,\r\n    \"address_line_2\": null,\r\n    \"city\": \"Bangalore\",\r\n    \"pincode\": null,\r\n    \"state\": \"KA\",\r\n    \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/personaldetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"personaldetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Company Details ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/companydetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"companydetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Company Details ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"company_name\": \"Kalpaj Commodities Trader\",\r\n        \"mobile_no1\": 81332348,\r\n        \"mobile_no2\": 8197923498,\r\n        \"branch_address_line_1\": \"#7-5-101\",\r\n        \"branch_address_line_2\": \"NEAR KRISHNA TEMPLE, JAWAHAR NAGAR\",\r\n        \"branch_city\": \"RAICHUR\",\r\n        \"branch_pincode\": null,\r\n        \"branch_state\": \"Karnataka\",\r\n        \"branch_country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/companydetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"companydetails",
+								""
+							]
+						},
+						"description": "In the Company details view these are are attribute name where you can update the detials .\r\nDont change attribute name.\r\n- name = Company name \r\n- rest of the fields are related to the company branch table"
+					},
+					"response": []
+				},
+				{
+					"name": "User Setting Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/settingdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"settingdetails",
+								""
+							]
+						},
+						"description": "Get request for the setting page of the user."
+					},
+					"response": []
+				},
+				{
+					"name": "User Setting Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"delivery_time\": \"9 am - 7 pm\",\r\n    \"min_value\": \"8\",\r\n    \"cash_percentage\": \"0.3\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/settingdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"settingdetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Business Details ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/businessdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"businessdetails",
+								""
+							]
+						},
+						"description": "Get request for the Business page of the user."
+					},
+					"response": []
+				},
+				{
+					"name": "Company Type Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3NjUyOTk4LCJqdGkiOiJmM2I2YTdjNWM4MGI0ZmQ0OWVkZjBhNGM1ODE4Y2Q1OSIsInVzZXJfaWQiOjR9.wCtUlwaeeH5gf5VTo_5inPwSCPp5QW9N931SdPAwCIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/details/companytype/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"details",
+								"companytype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Business Details  ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwNTc1MTQ4LCJqdGkiOiJiMTY1MmNlNDNiODk0N2Y4ODk1ZjIzN2FjZThlMWRkYSIsInVzZXJfaWQiOjR9.0Al4SE2u5lGio2CH5y5tHRc_8vZkUQJkZjpkch_EHII",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \r\n    \"name\": \"Kalpaj\",\r\n    \"father_name\": null,\r\n    \"mobile_no\": \"81979888\",\r\n    \"address_line_1\": null,\r\n    \"address_line_2\": null,\r\n    \"city\": \"Bangalore\",\r\n    \"pincode\": 548552,\r\n    \"state\": \"KA\",\r\n    \"email\": \"kalpaj@gmail.com\",\r\n    \"aadhar_no\": null,\r\n    \"pan_no\": null,\r\n    \"company_name\": \"Kalpja Commodities Trader\",\r\n    \"company_type_input\": 2 ,\r\n    \"company_pan_no\": \"1234123421\",\r\n    \"cin_no\": 111223,\r\n    \"mobile_no1\": 819238998,\r\n    \"mobile_no2\": 81923998,\r\n    \"gst_no\": 8973947923\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/businessdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"businessdetails",
+								""
+							]
+						},
+						"description": "Put request for the Business page of the user."
+					},
+					"response": []
+				},
+				{
+					"name": "User Reset Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3OTEwNjg0LCJqdGkiOiIyNGMzMzE3ODVmNTY0MGUzYjMyNDJlZDIyMjM3MGIzMCIsInVzZXJfaWQiOjV9.Fd5hpRcOKPAe36jElCfoyMATlT8YL-Top9r3lgx5F9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\": \"admin1\",\r\n    \"new_password\": \"admin323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/profileresetpass/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"profileresetpass",
+								""
+							]
+						},
+						"description": "Put request for the Business page of the user."
+					},
+					"response": []
+				},
+				{
+					"name": "User Geolocation Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3OTEwNjg0LCJqdGkiOiIyNGMzMzE3ODVmNTY0MGUzYjMyNDJlZDIyMjM3MGIzMCIsInVzZXJfaWQiOjV9.Fd5hpRcOKPAe36jElCfoyMATlT8YL-Top9r3lgx5F9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/geolocationdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"geolocationdetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Geolocation Details ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk3OTEwNjg0LCJqdGkiOiIyNGMzMzE3ODVmNTY0MGUzYjMyNDJlZDIyMjM3MGIzMCIsInVzZXJfaWQiOjV9.Fd5hpRcOKPAe36jElCfoyMATlT8YL-Top9r3lgx5F9Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"geo_latitude\": \"123.123a232.123\",\r\n    \"geo_longitude\": \"1232.3412.123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/geolocationdetails/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"geolocationdetails",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Bid Rate",
+			"item": [
+				{
+					"name": "Bid Rate List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4MDAzMzE2LCJqdGkiOiIzZGU2OWIwYTE5NDI0MWE3YTRmYTY0NzM2NDhmOTcyMiIsInVzZXJfaWQiOjV9.p7hleOdZp6oM7SuVhi24XFXpiQfUE9k5lKxA9jRQCoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/mybid/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mybid",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bid Rate List Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4MDAzMzE2LCJqdGkiOiIzZGU2OWIwYTE5NDI0MWE3YTRmYTY0NzM2NDhmOTcyMiIsInVzZXJfaWQiOjV9.p7hleOdZp6oM7SuVhi24XFXpiQfUE9k5lKxA9jRQCoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bid_price\" : 527.256\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/mybid/?p_id=3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mybid",
+								""
+							],
+							"query": [
+								{
+									"key": "p_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bid Rate List Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4MDAzMzE2LCJqdGkiOiIzZGU2OWIwYTE5NDI0MWE3YTRmYTY0NzM2NDhmOTcyMiIsInVzZXJfaWQiOjV9.p7hleOdZp6oM7SuVhi24XFXpiQfUE9k5lKxA9jRQCoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bid_price\" : 547.256\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/mybid/?r_status=all",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"mybid",
+								""
+							],
+							"query": [
+								{
+									"key": "r_status",
+									"value": "all",
+									"description": "it can be bid_id or it should be all( to remove all the list of him)"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Super Admin  - Admin ",
+			"item": [
+				{
+					"name": "Permission Group ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/groups/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"groups",
+								""
+							]
+						},
+						"description": "Permission Group List, Where you can all the groups of permission super-admin can add"
+					},
+					"response": []
+				},
+				{
+					"name": "User List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/list/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "819798898",
+									"disabled": true
+								}
+							]
+						},
+						"description": "List of User for the admin and super admin.\r\n- parameter - status\r\n    - permit : allow user to verify there details to access bullion.\r\n        - too show the list of permit user their details should be totalled filled and is_detail in user model and company_branch model should be true.\r\n    - admin : to get only admin user\r\n    - seller : to get all ther sellere who has permitted to access bullion\r\n    - user : Other than admin and bullion user \r\n    - deleted : All deleted user.\r\n- parameter - search \r\n    - you can search the names of the user and their exact phone number. Any one field."
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk5OTA0NDA3LCJqdGkiOiJiZmViZDA2NzhlOGE0Mzc1YTdhZGRiOGE4OGIyMWE0NyIsInVzZXJfaWQiOjF9.tjllTzmyyEc8NHOBaaP-KTd-fSLDL0N9Fyb0Lnx29rE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Admin-1\",\r\n    \"country_code\": \"+91\",\r\n    \"mobile_no\":12,\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\": \"admin\",\r\n    \"city\": \"BLR\",\r\n    \"state\": \"UP\",\r\n    \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/register/admin/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"register",
+								"admin",
+								""
+							]
+						},
+						"description": "Admin Registration when superadmin is logged in \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Preview",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/admin/7/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"admin",
+								"7",
+								""
+							]
+						},
+						"description": "- Admin Details Page after passing Admin id"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Preview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_active\" : \"abc\",\r\n    \"groups_id\" : [1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/admin/7/?edit=status",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"admin",
+								"7",
+								""
+							],
+							"query": [
+								{
+									"key": "edit",
+									"value": "status"
+								}
+							]
+						},
+						"description": "- Admin Details Page after passing Admin id\r\n\r\nparameter \r\n- profile : Fields are same as that of admin create rather than the password fields.\r\n- fields      \r\n            \"name\": \"Admi-1\",\r\n            \"email\": \"admin@gmail.com\",\r\n            \"mobile_no\": \"1111\",\r\n            \"city\": \"Bangalore\",\r\n            \"state\": \"MP\",\r\n            \"country\": \"India\"\r\n\r\n- status : Fields are group_id and the is_Active.\r\n    - fields\r\n            \"is_active\" : \"abc\",\r\n            \"groups_id\" : [1]\r\n\r\nPlease make sure you don't pass is_active status in the profile parameter"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Edit",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Admin_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/admin/edit/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"admin",
+								"edit",
+								""
+							]
+						},
+						"description": "- Admin Details Page after passing Admin id"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Admin_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\": \"admin@gmail.com\",\r\n    \"mobile_no\": \"1111\",\r\n    \"password\" : \"admin\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/admin/edit/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"admin",
+								"edit",
+								""
+							]
+						},
+						"description": "If check whether the user is verified or not \r\n- Is verified == True :\r\n    - Dont allow user to edit the phone number, send the response as email and password(if he wants to change).\r\n\r\n- If not :\r\n    - He has access to change his email mobile number and password(if required)"
+					},
+					"response": []
+				},
+				{
+					"name": "User Preview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/list/3/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"list",
+								"3",
+								""
+							]
+						},
+						"description": "- User Details Page after passing user id\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "User Preview ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n    \"is_active\": true,\r\n    \"is_permitted\" : false\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/list/4/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"list",
+								"4",
+								""
+							]
+						},
+						"description": "- User Details Page after passing user id\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Add State and City ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Admin_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city\":\"Raichur\",\r\n    \"state\":\"Karnataka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/state/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"state",
+								""
+							]
+						},
+						"description": "Only Super admin can add the States and cities and their relationship."
+					},
+					"response": []
+				},
+				{
+					"name": "Commodity For State",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/commodity/?state=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"commodity",
+								""
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "1",
+									"description": "State id"
+								}
+							]
+						},
+						"description": "List of State Related with the metals\r\n- by default you get all the list of the states \r\n- parameter \r\n    - state : takes id and returns all the metal relation with respect to state."
+					},
+					"response": []
+				},
+				{
+					"name": "Add State and Commodities Relatioin ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"state_id\": 1,   \r\n    \"metal\":1,\r\n    \"metal_category\": 2,\r\n    \"metal_purity\": [1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/commodity/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"commodity",
+								""
+							]
+						},
+						"description": "List of State Related with the metals\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT State and Commodities Relatioin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n  \r\n    \"metal_purity\": [1,1,2],\r\n    \"is_active\" : false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/commodity/?id=10",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"commodity",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						},
+						"description": "List of State Related with the metals\r\n"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dummy",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Other Required Api ",
+			"item": [
+				{
+					"name": "State List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/state/list/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"state",
+								"list",
+								""
+							]
+						},
+						"description": "List of stated and city \r\nIt should be authenticated."
+					},
+					"response": []
+				},
+				{
+					"name": "Message Notifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/message/notifications/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"message",
+								"notifications",
+								""
+							]
+						},
+						"description": "List of stated and city \r\nIt should be authenticated."
+					},
+					"response": []
+				},
+				{
+					"name": "Message Notifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"id\" : 8,\r\n     \"message_content\" : \"Hello Welcome to the city of god\",\r\n    \"name\" : \"Jaykumar\" ,\r\n    \"is_detailed\": false\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/send/message/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"message",
+								"notifications",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Notifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"id\" : 8,\r\n     \"message_content\" : \"Hello Welcome to the city of god\",\r\n    \"name\" : \"Jaykumar\" ,\r\n    \"is_detailed\": false\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/send/message/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"message",
+								"notifications",
+								"8",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send message",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Admin_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\" : \"Hello Welcome to the city of god\",\r\n    \"id\" : 4\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/send/message/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"send",
+								"message",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product Control",
+			"item": [
+				{
+					"name": "Get Metal ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/metal/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Metal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Diamond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metal/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Metal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Admin_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Diaasdfsdfasdfmond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metal/?id=4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metal",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Metal Category ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalcategory/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Metal Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Bi3scuit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalcategory/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalcategory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Metal Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Diaasdfsdfasdfmond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalcategory/?id=2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalcategory",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Metal Purity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalpurity/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalpurity",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Metal Purity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Bi3scuit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalpurity/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalpurity",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Metal Purity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Diaasdfsdfasdfmond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/metalpurity/?id=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"metalpurity",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payment Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/paymenttype/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"paymenttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Payment Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_type\":\"Card\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/paymenttype/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"paymenttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Payment Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_type\":\"Diaasdfsdfasdfmond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/paymenttype/?id=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"paymenttype",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Delivery Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/deliverytime/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"deliverytime",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Delivery Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"time\":\"T+1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/deliverytime/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"deliverytime",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Delivery Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"time\":\"T+2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/deliverytime/?id=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"deliverytime",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Market Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product/markettime/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"markettime",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Market Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_time\": \"06:00:00\",\r\n    \"end_time\": \"18:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/markettime/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"markettime",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Market Time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Superuser_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_time\": \"06:03:00\",\r\n    \"end_time\": \"18:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product/markettime/?id=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product",
+								"markettime",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "All product Control request are avaiable for the admin and superadmin.\r\n",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "510eadd6-53f7-46b8-995d-09d9285d2c0f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e9a0cbf0-15ae-45f4-9b8c-48dc7794d41f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

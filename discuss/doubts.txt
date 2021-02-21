@@ -1,0 +1,42 @@
+- Forgot Password
+	- Do we need to check user doesnt enter the same old password ?
+
+
+
+- Product 
+	- Filters
+		- Product Filters how should be achieved ? How to pass the parameter to the server?
+	- Listing
+		- No Update options for the myList of user.
+		- min & max where to define.
+		- How min max is decided ?
+
+
+- User
+	- What is account status ?
+	- Lisiting Validated expires on ?
+	- If User is disable his all product should be disable.
+
+	- SuperAdmin User 
+		- if is_seller == false :  can create company details.
+		- diff btn usersetting group permission and verify user.
+		- user bid list ????
+		- Related to Work utility:- Universal features to all traders ???
+		- change current pin.
+
+
+- Permit User for Bullion
+	- If User Cocmpany is not active then all his company branch are not active
+	- If User Company branch is not active then dont show any of the branch of the user
+	- If company is_active function.
+
+- Who will increase their validation period?
+
+
+
+
+
+
+	
+	
+	

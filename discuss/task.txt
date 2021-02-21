@@ -1,0 +1,83 @@
+1. Redirected to login page in case of forgot password. In case of change password, end all active sessions from other devices and keep only current device alive.
+2. Default period should be zero. Admin should be able to choose manual date range. Along with that you may create buttons there to add "3month/6month/1year" for convenience.
+
+
+------------------------------------------------------- NEW WORKFLOW ------------------------------------------------
+
+
+
+
+Types of User in React App
+- Guest User
+- Normal user
+- Trader(User who will be having permission for adding Listing)
+
+Types of User in Django Admin Panel
+- Super Admin
+- Admins
+
+
+FLOW
+I - Step - 1 : Initial State
+- React app 
+	- user would be able to see the landing page(registration, login)
+- Admin Panel 
+	- Super admin can login
+	- Add admins
+	- Assign Permissions
+	- Add State, City, Metal, Category, Purity, Payment Options, Market Time(same for all states)
+	- Add the relation b/w State, City, Metal, Category....
+
+II - Step 2 - User registration and verification 
+- React App
+	- User can do registration - Any one can do the registration User can also add new State and city and Admin will get notification when user add a new State or City
+	- If user state is not available then display a popup that service is not available in that area(state)  
+	- User can update his detail from setting's page until user get verified from the admin 
+		- For Normal user
+		- For seller
+	- If seller is not verified he can't add the listing
+	- A normal user can later request to become a seller
+- Admin Panel
+	- user can filter the registered user
+	- for user who want to be a seller the Verification Step will now happen
+	- Verification Step
+		- Check user Personal detail, Company detail, Business detail, Delivery Time, Cash handling charge, Min Order Weight
+		- If all things are fine Seller will be verified
+		- Now he can do the Listing
+
+III - Step 3 : Bullion Adding
+- React App
+	- User can now add the bullion for that the data will be coming from the backed based on the relation that Admin has added depending upon the state user has added during registration
+	- After adding the user can see the bullion in Mylisting Page
+		- My listing page will also be having the filters(active, stooped, paused)
+- Django Server - Backend
+	- Send the MCX data while adding the Bullion
+	- send the Users Bullion List
+
+IV - Step 4 : Listing for Users
+- React App
+	- Users can see the Listing in Listing Page and also the tabs will also be active there with search tab and filters
+	- Can go to Listing Detail
+	- From Listing Detail User can go to 
+		- Store Profile
+			- In store profile he can make that Store as favorite
+			- And see the Top listing of that users
+		- Add the Bid - New Bidding Page
+	- My Bids Page will also now Active
+	- My Favorite Page will also be active now
+- Django Server
+	- Making routes for all the Screen in react app
+
+V - Step - 5 
+- React App
+	- Help and FAQ section
+	- Messages Sent from Admin Page 
+- Admin panel
+	- Admin can Do certain action on the behalf of the User and can add some message for that user
+	- List of Question asked by the Users
+	- Should be able to answer the Questions
+
+- New 
+
+	- city - metal product for the same city.
+	- button for processing the user details for verification of the user to be a bullion.

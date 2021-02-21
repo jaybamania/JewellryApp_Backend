@@ -1,0 +1,57 @@
+[
+	{
+		"name": "Rajneesh Kumar",
+		"country_code": "+91",
+		"country": "India",
+		"state": "UP",
+		"city": "Kanpur",
+		"mobile_no": 1000000000,
+		"password": "admin",
+		"firm_name": "Rajneesh Farm",
+		"is_seller": false
+	},
+	{
+		"name": "Manoj Saini",
+		"country_code": "+91",
+		"country": "India",
+		"state": "UP",
+		"city": "Bijnor",
+		"mobile_no": 1000000001,
+		"password": "admin",
+		"firm_name": "Manoj Saini",
+		"is_seller": false
+	},
+	{
+		"name": "Kalpaj",
+		"country_code": "+91",
+		"country": "India",
+		"state": "KA",
+		"city": "Bangalore",
+		"mobile_no": 8197988998,
+		"password": "admin",
+		"firm_name": "Kalpaj Commodities Trader",
+		"is_seller": true
+	},
+	{
+		"name": "Sachin",
+		"country_code": "+91",
+		"country": "India",
+		"state": "KA",
+		"city": "Bangalore",
+		"mobile_no": 123456,
+		"password": "admin",
+		"firm_name": "Sachin Commodities Trader",
+		"is_seller": true
+	},
+	{
+		"name": "Vishwajith",
+		"country_code": "+91",
+		"country": "India",
+		"state": "KA",
+		"city": "Bangalore",
+		"mobile_no": 1234567,
+		"password": "admin",
+		"firm_name": "Vishwajith Commodities Trader",
+		"is_seller": true
+	}
+]

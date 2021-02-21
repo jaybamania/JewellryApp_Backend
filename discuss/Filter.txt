@@ -1,0 +1,8 @@
+Filter
+
+- Super Admin
+    - Filters are based upon is_admin, is_bullon, is_user, disabled people.
+
+
+- Admin 
+

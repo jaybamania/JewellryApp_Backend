@@ -1,0 +1,46 @@
+[
+	{
+		"name": "Admin-1",
+		"country_code": "+91",
+		"mobile_no": 1111,
+		"email": "admin@gmail.com",
+		"password": "admin",
+		"city": "BLR",
+		"state": "UP",
+		"country": "India",
+		"is_seller": false
+	},
+	{
+		"name": "Admin-2",
+		"country_code": "+91",
+		"mobile_no": 2222,
+		"email": "admin@gmail.com",
+		"password": "admin",
+		"city": "BLR",
+		"state": "UP",
+		"country": "India",
+		"is_seller": false
+	},
+	{
+		"name": "Admin-3",
+		"country_code": "+91",
+		"mobile_no": 3333,
+		"email": "admin@gmail.com",
+		"password": "admin",
+		"city": "BLR",
+		"state": "UP",
+		"country": "India",
+		"is_seller": false
+	},
+	{
+		"name": "Admin-4",
+		"country_code": "+91",
+		"mobile_no": 4444,
+		"email": "admin@gmail.com",
+		"password": "admin",
+		"city": "BLR",
+		"state": "UP",
+		"country": "India",
+		"is_seller": false
+	}
+]

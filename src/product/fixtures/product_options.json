@@ -1,0 +1,178 @@
+[
+	{
+		"model": "product.markettime",
+		"pk": 1,
+		"fields": {
+			"start_time": "06:00:00",
+			"end_time": "18:00:00"
+		}
+	},
+	{
+		"model": "product.metal",
+		"pk": 1,
+		"fields": { "name": "Gold" }
+	},
+	{
+		"model": "product.metal",
+		"pk": 2,
+		"fields": { "name": "Silver" }
+	},
+
+	{
+		"model": "product.metalcategory",
+		"pk": 1,
+		"fields": { "name": "Bar" }
+	},
+	{
+		"model": "product.metalcategory",
+		"pk": 2,
+		"fields": { "name": "Coin" }
+	},
+	{
+		"model": "product.metalcategory",
+		"pk": 3,
+		"fields": { "name": "Biscuit" }
+	},
+
+	{
+		"model": "product.metalpurity",
+		"pk": 1,
+		"fields": { "name": "991" }
+	},
+	{
+		"model": "product.metalpurity",
+		"pk": 2,
+		"fields": { "name": "992" }
+	},
+	{
+		"model": "product.metalpurity",
+		"pk": 3,
+		"fields": { "name": "993" }
+	},
+
+	{
+		"model": "product.deliverytime",
+		"pk": 1,
+		"fields": { "time": "T+1" }
+	},
+	{
+		"model": "product.deliverytime",
+		"pk": 2,
+		"fields": { "time": "T+2" }
+	},
+	{
+		"model": "product.deliverytime",
+		"pk": 3,
+		"fields": { "time": "T+3" }
+	},
+
+	{
+		"model": "product.paymenttype",
+		"pk": 1,
+		"fields": { "payment_type": "Cash" }
+	},
+	{
+		"model": "product.paymenttype",
+		"pk": 2,
+		"fields": { "payment_type": "Bank" }
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 1,
+		"fields": {
+			"state_id": 1,
+			"metal": 1,
+			"metal_category": 1,
+			"metal_purity": [1, 2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 2,
+		"fields": {
+			"state_id": 1,
+			"metal": 2,
+			"metal_category": 2,
+			"metal_purity": [1, 2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 3,
+		"fields": {
+			"state_id": 1,
+			"metal": 1,
+			"metal_category": 3,
+			"metal_purity": [1, 2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 4,
+		"fields": {
+			"state_id": 2,
+			"metal": 1,
+			"metal_category": 1,
+			"metal_purity": [2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 5,
+		"fields": {
+			"state_id": 2,
+			"metal": 2,
+			"metal_category": 2,
+			"metal_purity": [2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 6,
+		"fields": {
+			"state_id": 2,
+			"metal": 1,
+			"metal_category": 3,
+			"metal_purity": [2, 3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 7,
+		"fields": {
+			"state_id": 5,
+			"metal": 1,
+			"metal_category": 1,
+			"metal_purity": [2],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 8,
+		"fields": {
+			"state_id": 6,
+			"metal": 2,
+			"metal_category": 2,
+			"metal_purity": [3],
+			"is_active": true
+		}
+	},
+	{
+		"model": "product.CommodityForState",
+		"pk": 9,
+		"fields": {
+			"state_id": 7,
+			"metal": 1,
+			"metal_category": 3,
+			"metal_purity": [2, 3],
+			"is_active": true
+		}
+	}
+]

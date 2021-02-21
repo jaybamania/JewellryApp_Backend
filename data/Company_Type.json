@@ -1,0 +1,6 @@
+[
+	{ "id": 1, "company_type_name": "Limited Liability Company" },
+	{ "id": 2, "company_type_name": "Private Ltd Company" },
+	{ "id": 3, "company_type_name": "Public Ltd Company" },
+	{ "id": 4, "company_type_name": "Sole Proprietorship" }
+]

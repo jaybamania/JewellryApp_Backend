@@ -1,0 +1,21 @@
+- Permission
+    - check all the user whether they are super admin, admin , user , guest
+    - is_active false user cannot login.
+    - check all the user are is_active
+
+
+    
+    - Super-admin 
+        - Has all the permission
+        - He can disable user also 
+        - He can disable product also.
+        - Creating super user should we need to is_verified of the admin.
+
+    - Admin 
+        - has the group of permission allocated by the user
+        - Check wether admin has disable his account.
+
+
+    - User
+        - Check whether their account is disabled.
+        - User permission for getting states.
